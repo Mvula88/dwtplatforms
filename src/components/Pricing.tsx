@@ -31,7 +31,7 @@ const plans: Plan[] = [
     name: "Professional",
     price: "N$4,999",
     description: "Complete solution for established businesses",
-    features: ["10+ page website", "Everything in Business", "Blog / News section", "Content management system", "Advanced SEO", "6 months free support"],
+    features: ["10+ page website", "Everything in Business", "Blog / News section", "Advanced SEO", "6 months free support"],
     ctaText: "Get Started",
   },
   {
