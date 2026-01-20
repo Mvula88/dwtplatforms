@@ -251,8 +251,8 @@ export default function Hero() {
           marginRight: "auto",
           paddingLeft: "16px",
           paddingRight: "16px",
-          paddingTop: "80px",
-          paddingBottom: "40px",
+          paddingTop: "100px",
+          paddingBottom: "60px",
           position: "relative",
           zIndex: 10,
           textAlign: "center",
@@ -261,7 +261,7 @@ export default function Hero() {
       >
         <style>{`
           @media (min-width: 640px) {
-            .hero-content { padding-left: 24px !important; padding-right: 24px !important; padding-top: 0 !important; padding-bottom: 0 !important; }
+            .hero-content { padding-left: 24px !important; padding-right: 24px !important; padding-top: 100px !important; padding-bottom: 40px !important; }
           }
         `}</style>
 
