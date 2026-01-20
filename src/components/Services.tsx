@@ -105,10 +105,6 @@ export default function Services() {
         {/* Header */}
         <div
           style={{
-            textAlign: "center",
-            maxWidth: "768px",
-            marginLeft: "auto",
-            marginRight: "auto",
             marginBottom: "40px",
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(32px)",
@@ -118,48 +114,36 @@ export default function Services() {
         >
           <style>{`
             @media (min-width: 768px) {
-              .services-header { margin-bottom: 64px !important; }
+              .services-header { margin-bottom: 64px !important; display: flex !important; align-items: flex-end !important; justify-content: space-between !important; }
             }
           `}</style>
-          <span
-            style={{
-              display: "inline-block",
-              padding: "6px 16px",
-              backgroundColor: "rgba(13, 79, 79, 0.1)",
-              color: "#0d4f4f",
-              borderRadius: "9999px",
-              fontSize: "13px",
-              fontWeight: 600,
-              marginBottom: "12px",
-            }}
-            className="services-badge"
-          >
-            <style>{`
-              @media (min-width: 640px) {
-                .services-badge { padding: 8px 20px !important; font-size: 14px !important; margin-bottom: 16px !important; }
-              }
-            `}</style>
-            Services
-          </span>
-          <h2
-            style={{
-              fontSize: "clamp(2rem, 5vw, 3rem)",
-              fontWeight: 800,
-              color: "#1a1a1a",
-              marginBottom: "16px",
-              lineHeight: 1.2,
-            }}
-          >
-            Everything you need to go online
-          </h2>
-          <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.6, paddingLeft: "8px", paddingRight: "8px" }} className="services-subtitle">
-            <style>{`
-              @media (min-width: 640px) {
-                .services-subtitle { font-size: 18px !important; line-height: 1.7 !important; padding-left: 0 !important; padding-right: 0 !important; }
-              }
-            `}</style>
-            Websites, apps, and business systems built for Namibian companies.
-          </p>
+          <div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+              <div style={{ width: "40px", height: "3px", backgroundColor: "#5ce1e6", borderRadius: "2px" }} />
+              <span style={{ fontSize: "13px", fontWeight: 600, color: "#0d4f4f", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                Services
+              </span>
+            </div>
+            <h2
+              style={{
+                fontSize: "clamp(2rem, 5vw, 3rem)",
+                fontWeight: 800,
+                color: "#1a1a1a",
+                lineHeight: 1.2,
+                marginBottom: "12px",
+              }}
+            >
+              What We Build
+            </h2>
+            <p style={{ fontSize: "16px", color: "#666", lineHeight: 1.6, maxWidth: "500px" }} className="services-subtitle">
+              <style>{`
+                @media (min-width: 640px) {
+                  .services-subtitle { font-size: 18px !important; }
+                }
+              `}</style>
+              From simple websites to complex business systems — we bring your digital vision to life.
+            </p>
+          </div>
         </div>
 
         {/* Services Grid */}

@@ -132,20 +132,6 @@ export default function WhyChooseUs() {
             transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
         >
-          <span
-            style={{
-              display: "inline-block",
-              padding: "8px 20px",
-              backgroundColor: "rgba(13, 79, 79, 0.1)",
-              color: "#0d4f4f",
-              borderRadius: "9999px",
-              fontSize: "14px",
-              fontWeight: 600,
-              marginBottom: "16px",
-            }}
-          >
-            Why DWT
-          </span>
           <h2
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
@@ -155,10 +141,20 @@ export default function WhyChooseUs() {
               lineHeight: 1.2,
             }}
           >
-            Built different, for a reason
+            Why{" "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #0d4f4f 0%, #5ce1e6 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Choose Us
+            </span>
           </h2>
-          <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            Local expertise, modern tech, real results.
+          <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7, maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
+            We&apos;re not just developers — we&apos;re your digital partners, committed to helping your business thrive online.
           </p>
         </div>
 

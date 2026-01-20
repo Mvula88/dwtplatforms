@@ -157,20 +157,9 @@ export default function Testimonials() {
             transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
         >
-          <span
-            style={{
-              display: "inline-block",
-              padding: "8px 20px",
-              backgroundColor: "rgba(13, 79, 79, 0.1)",
-              color: "#0d4f4f",
-              borderRadius: "9999px",
-              fontSize: "14px",
-              fontWeight: 600,
-              marginBottom: "16px",
-            }}
-          >
-            Clients
-          </span>
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "20px" }}>
+            <span style={{ fontSize: "64px", color: "#5ce1e6", fontFamily: "Georgia, serif", lineHeight: 0.5, opacity: 0.5 }}>"</span>
+          </div>
           <h2
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
@@ -180,10 +169,10 @@ export default function Testimonials() {
               lineHeight: 1.2,
             }}
           >
-            Trusted by businesses across Namibia
+            What Our Clients Say
           </h2>
           <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            Here&apos;s what they have to say.
+            Don&apos;t just take our word for it — hear from businesses we&apos;ve helped succeed online.
           </p>
         </div>
 

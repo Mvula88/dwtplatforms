@@ -78,20 +78,6 @@ export default function Pricing() {
             transition: "all 0.7s ease",
           }}
         >
-          <span
-            style={{
-              display: "inline-block",
-              padding: "8px 20px",
-              backgroundColor: "rgba(13, 79, 79, 0.1)",
-              color: "#0d4f4f",
-              borderRadius: "9999px",
-              fontSize: "14px",
-              fontWeight: 600,
-              marginBottom: "16px",
-            }}
-          >
-            Pricing
-          </span>
           <h2
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
@@ -99,12 +85,28 @@ export default function Pricing() {
               color: "#1a1a1a",
               marginBottom: "16px",
               lineHeight: 1.2,
+              position: "relative",
+              display: "inline-block",
             }}
           >
-            Pricing that makes sense
+            Simple, Transparent Pricing
+            <svg
+              style={{
+                position: "absolute",
+                bottom: "-8px",
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: "120px",
+                height: "8px",
+              }}
+              viewBox="0 0 120 8"
+              fill="none"
+            >
+              <path d="M2 6C30 2 90 2 118 6" stroke="#5ce1e6" strokeWidth="4" strokeLinecap="round" />
+            </svg>
           </h2>
-          <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            Straightforward plans. No hidden costs.
+          <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7, marginTop: "24px" }}>
+            No hidden fees. No surprises. Choose the plan that fits your needs and budget.
           </p>
         </div>
 

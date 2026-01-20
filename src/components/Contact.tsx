@@ -169,21 +169,13 @@ ${formState.message}`;
             transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
         >
-          <span
-            style={{
-              display: "inline-block",
-              padding: "8px 20px",
-              backgroundColor: "rgba(255, 255, 255, 0.1)",
-              color: "#ffffff",
-              borderRadius: "9999px",
-              fontSize: "14px",
-              fontWeight: 600,
-              marginBottom: "16px",
-              backdropFilter: "blur(8px)",
-            }}
-          >
-            Contact
-          </span>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", marginBottom: "16px" }}>
+            <div style={{ width: "40px", height: "2px", backgroundColor: "rgba(92, 225, 230, 0.5)", borderRadius: "2px" }} />
+            <svg style={{ width: "20px", height: "20px", color: "#5ce1e6" }} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <div style={{ width: "40px", height: "2px", backgroundColor: "rgba(92, 225, 230, 0.5)", borderRadius: "2px" }} />
+          </div>
           <h2
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
@@ -193,10 +185,10 @@ ${formState.message}`;
               lineHeight: 1.2,
             }}
           >
-            Let&apos;s build something great
+            Ready to Go Digital?
           </h2>
           <p style={{ fontSize: "18px", color: "rgba(255, 255, 255, 0.7)", lineHeight: 1.7 }}>
-            Tell us about your project. We&apos;ll get back to you within 24 hours.
+            Let&apos;s discuss your project and see how we can help your business grow online. No commitment required.
           </p>
         </div>
 
