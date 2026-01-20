@@ -268,37 +268,24 @@ export default function Hero() {
         {/* Tagline */}
         <div
           style={{
-            display: "inline-flex",
+            display: "flex",
             alignItems: "center",
-            gap: "8px",
-            padding: "8px 16px",
-            borderRadius: "9999px",
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-            backdropFilter: "blur(8px)",
-            border: "1px solid rgba(255, 255, 255, 0.2)",
+            justifyContent: "center",
+            gap: "16px",
             marginBottom: "24px",
             opacity: isLoaded ? 1 : 0,
-            transform: isLoaded ? "translateY(0) scale(1)" : "translateY(20px) scale(0.9)",
+            transform: isLoaded ? "translateY(0)" : "translateY(20px)",
             transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
           className="tagline-badge"
         >
           <style>{`
             @media (min-width: 640px) {
-              .tagline-badge { padding: 10px 20px !important; margin-bottom: 32px !important; }
+              .tagline-badge { margin-bottom: 32px !important; }
             }
           `}</style>
-          <span
-            style={{
-              width: "8px",
-              height: "8px",
-              borderRadius: "50%",
-              backgroundColor: "#5ce1e6",
-              animation: "pulse 2s ease-in-out infinite",
-              boxShadow: "0 0 10px #5ce1e6",
-            }}
-          />
-          <span style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "12px", fontWeight: 500 }} className="tagline-text">
+          <div style={{ width: "40px", height: "2px", backgroundColor: "rgba(92, 225, 230, 0.6)", borderRadius: "2px" }} />
+          <span style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "13px", fontWeight: 500, letterSpacing: "0.05em", textTransform: "uppercase" }} className="tagline-text">
             If you can dream it, we can build it
           </span>
           <style>{`
@@ -306,6 +293,7 @@ export default function Hero() {
               .tagline-text { font-size: 14px !important; }
             }
           `}</style>
+          <div style={{ width: "40px", height: "2px", backgroundColor: "rgba(92, 225, 230, 0.6)", borderRadius: "2px" }} />
         </div>
 
         {/* Main Headline */}
