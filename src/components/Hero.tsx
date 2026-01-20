@@ -299,7 +299,7 @@ export default function Hero() {
             }}
           />
           <span style={{ color: "rgba(255, 255, 255, 0.9)", fontSize: "12px", fontWeight: 500 }} className="tagline-text">
-            If you can dream it, we can build it
+            Web & Software Development in Namibia
           </span>
           <style>{`
             @media (min-width: 640px) {

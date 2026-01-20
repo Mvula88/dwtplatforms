@@ -101,10 +101,10 @@ export default function Pricing() {
               lineHeight: 1.2,
             }}
           >
-            Simple, Transparent Pricing
+            Pricing that makes sense
           </h2>
           <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            No hidden fees. No surprises. Choose the plan that fits your needs and budget.
+            Straightforward plans. No hidden costs.
           </p>
         </div>
 

@@ -182,7 +182,7 @@ ${formState.message}`;
               backdropFilter: "blur(8px)",
             }}
           >
-            Get In Touch
+            Contact
           </span>
           <h2
             style={{
@@ -193,10 +193,10 @@ ${formState.message}`;
               lineHeight: 1.2,
             }}
           >
-            Ready to Go Digital?
+            Let&apos;s build something great
           </h2>
           <p style={{ fontSize: "18px", color: "rgba(255, 255, 255, 0.7)", lineHeight: 1.7 }}>
-            Let&apos;s discuss your project and see how we can help your business grow online. No commitment required.
+            Tell us about your project. We&apos;ll get back to you within 24 hours.
           </p>
         </div>
 

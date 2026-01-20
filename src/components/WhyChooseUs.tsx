@@ -144,7 +144,7 @@ export default function WhyChooseUs() {
               marginBottom: "16px",
             }}
           >
-            Why Choose Us
+            Why DWT
           </span>
           <h2
             style={{
@@ -155,10 +155,10 @@ export default function WhyChooseUs() {
               lineHeight: 1.2,
             }}
           >
-            Your Success Is Our Priority
+            Built different, for a reason
           </h2>
           <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            We&apos;re not just developers - we&apos;re your digital partners, committed to helping your business thrive online.
+            Local expertise, modern tech, real results.
           </p>
         </div>
 

@@ -139,7 +139,7 @@ export default function Services() {
                 .services-badge { padding: 8px 20px !important; font-size: 14px !important; margin-bottom: 16px !important; }
               }
             `}</style>
-            Our Services
+            Services
           </span>
           <h2
             style={{
@@ -150,7 +150,7 @@ export default function Services() {
               lineHeight: 1.2,
             }}
           >
-            What We Build
+            Everything you need to go online
           </h2>
           <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.6, paddingLeft: "8px", paddingRight: "8px" }} className="services-subtitle">
             <style>{`
@@ -158,7 +158,7 @@ export default function Services() {
                 .services-subtitle { font-size: 18px !important; line-height: 1.7 !important; padding-left: 0 !important; padding-right: 0 !important; }
               }
             `}</style>
-            From simple websites to complex business systems, we have the expertise to bring your digital vision to life.
+            Websites, apps, and business systems built for Namibian companies.
           </p>
         </div>
 

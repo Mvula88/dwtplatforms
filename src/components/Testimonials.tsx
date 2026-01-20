@@ -169,7 +169,7 @@ export default function Testimonials() {
               marginBottom: "16px",
             }}
           >
-            Testimonials
+            Clients
           </span>
           <h2
             style={{
@@ -180,10 +180,10 @@ export default function Testimonials() {
               lineHeight: 1.2,
             }}
           >
-            What Our Clients Say
+            Trusted by businesses across Namibia
           </h2>
           <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
-            Don&apos;t just take our word for it - hear from businesses we&apos;ve helped succeed online.
+            Here&apos;s what they have to say.
           </p>
         </div>
 
