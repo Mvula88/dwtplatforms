@@ -78,14 +78,20 @@ export default function Testimonials() {
     <section
       id="testimonials"
       ref={ref}
+      className="testimonials-section"
       style={{
-        paddingTop: "96px",
-        paddingBottom: "128px",
+        paddingTop: "64px",
+        paddingBottom: "80px",
         backgroundColor: "#f8f9fa",
         position: "relative",
         overflow: "hidden",
       }}
     >
+      <style>{`
+        @media (min-width: 768px) {
+          .testimonials-section { padding-top: 96px !important; padding-bottom: 128px !important; }
+        }
+      `}</style>
       {/* Animated Background Decorations */}
       <div
         style={{

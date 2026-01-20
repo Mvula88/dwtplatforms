@@ -64,7 +64,12 @@ export default function Services() {
   }, []);
 
   return (
-    <section id="services" ref={ref} style={{ paddingTop: "96px", paddingBottom: "128px", backgroundColor: "#f8f9fa", position: "relative", overflow: "hidden" }}>
+    <section id="services" ref={ref} style={{ paddingTop: "64px", paddingBottom: "80px", backgroundColor: "#f8f9fa", position: "relative", overflow: "hidden" }} className="services-section">
+      <style>{`
+        @media (min-width: 768px) {
+          .services-section { padding-top: 96px !important; padding-bottom: 128px !important; }
+        }
+      `}</style>
       {/* Background decoration */}
       <div
         style={{
@@ -91,7 +96,12 @@ export default function Services() {
         }}
       />
 
-      <div style={{ maxWidth: "1280px", marginLeft: "auto", marginRight: "auto", paddingLeft: "24px", paddingRight: "24px", position: "relative", zIndex: 10 }}>
+      <div style={{ maxWidth: "1280px", marginLeft: "auto", marginRight: "auto", paddingLeft: "16px", paddingRight: "16px", position: "relative", zIndex: 10 }} className="services-container">
+        <style>{`
+          @media (min-width: 640px) {
+            .services-container { padding-left: 24px !important; padding-right: 24px !important; }
+          }
+        `}</style>
         {/* Header */}
         <div
           style={{
@@ -99,24 +109,36 @@ export default function Services() {
             maxWidth: "768px",
             marginLeft: "auto",
             marginRight: "auto",
-            marginBottom: "64px",
+            marginBottom: "40px",
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(32px)",
             transition: "all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
+          className="services-header"
         >
+          <style>{`
+            @media (min-width: 768px) {
+              .services-header { margin-bottom: 64px !important; }
+            }
+          `}</style>
           <span
             style={{
               display: "inline-block",
-              padding: "8px 20px",
+              padding: "6px 16px",
               backgroundColor: "rgba(13, 79, 79, 0.1)",
               color: "#0d4f4f",
               borderRadius: "9999px",
-              fontSize: "14px",
+              fontSize: "13px",
               fontWeight: 600,
-              marginBottom: "16px",
+              marginBottom: "12px",
             }}
+            className="services-badge"
           >
+            <style>{`
+              @media (min-width: 640px) {
+                .services-badge { padding: 8px 20px !important; font-size: 14px !important; margin-bottom: 16px !important; }
+              }
+            `}</style>
             Our Services
           </span>
           <h2
@@ -130,7 +152,12 @@ export default function Services() {
           >
             What We Build
           </h2>
-          <p style={{ fontSize: "18px", color: "#666", lineHeight: 1.7 }}>
+          <p style={{ fontSize: "15px", color: "#666", lineHeight: 1.6, paddingLeft: "8px", paddingRight: "8px" }} className="services-subtitle">
+            <style>{`
+              @media (min-width: 640px) {
+                .services-subtitle { font-size: 18px !important; line-height: 1.7 !important; padding-left: 0 !important; padding-right: 0 !important; }
+              }
+            `}</style>
             From simple websites to complex business systems, we have the expertise to bring your digital vision to life.
           </p>
         </div>
@@ -159,8 +186,8 @@ export default function Services() {
               onMouseLeave={() => setHoveredCard(null)}
               style={{
                 backgroundColor: "#ffffff",
-                borderRadius: "24px",
-                padding: "32px",
+                borderRadius: "20px",
+                padding: "24px",
                 boxShadow: hoveredCard === i
                   ? "0 25px 50px -12px rgba(13, 79, 79, 0.25)"
                   : "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",

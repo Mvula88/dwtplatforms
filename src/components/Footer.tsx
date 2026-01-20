@@ -57,12 +57,21 @@ export default function Footer() {
           maxWidth: "1280px",
           marginLeft: "auto",
           marginRight: "auto",
-          paddingLeft: "24px",
-          paddingRight: "24px",
-          paddingTop: "64px",
-          paddingBottom: "80px",
+          paddingLeft: "16px",
+          paddingRight: "16px",
+          paddingTop: "48px",
+          paddingBottom: "64px",
         }}
+        className="footer-main"
       >
+        <style>{`
+          @media (min-width: 640px) {
+            .footer-main { padding-left: 24px !important; padding-right: 24px !important; }
+          }
+          @media (min-width: 768px) {
+            .footer-main { padding-top: 64px !important; padding-bottom: 80px !important; }
+          }
+        `}</style>
         <div
           style={{
             display: "grid",

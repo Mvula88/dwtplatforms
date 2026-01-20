@@ -58,7 +58,12 @@ export default function Pricing() {
   }, []);
 
   return (
-    <section id="pricing" ref={ref} style={{ paddingTop: "96px", paddingBottom: "128px", backgroundColor: "#ffffff" }}>
+    <section id="pricing" ref={ref} style={{ paddingTop: "64px", paddingBottom: "80px", backgroundColor: "#ffffff" }} className="pricing-section">
+      <style>{`
+        @media (min-width: 768px) {
+          .pricing-section { padding-top: 96px !important; padding-bottom: 128px !important; }
+        }
+      `}</style>
       <div style={{ maxWidth: "1280px", marginLeft: "auto", marginRight: "auto", paddingLeft: "24px", paddingRight: "24px" }}>
         {/* Header */}
         <div

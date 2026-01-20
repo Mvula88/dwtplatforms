@@ -69,14 +69,20 @@ ${formState.message}`;
     <section
       id="contact"
       ref={ref}
+      className="contact-section"
       style={{
-        paddingTop: "96px",
-        paddingBottom: "128px",
+        paddingTop: "64px",
+        paddingBottom: "80px",
         background: "linear-gradient(135deg, #0d4f4f 0%, #1a6b6b 50%, #0d4f4f 100%)",
         position: "relative",
         overflow: "hidden",
       }}
     >
+      <style>{`
+        @media (min-width: 768px) {
+          .contact-section { padding-top: 96px !important; padding-bottom: 128px !important; }
+        }
+      `}</style>
       {/* Background Pattern */}
       <div
         style={{

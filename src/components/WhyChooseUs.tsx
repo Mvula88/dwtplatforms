@@ -93,7 +93,12 @@ export default function WhyChooseUs() {
   }, []);
 
   return (
-    <section id="why-us" ref={ref} style={{ paddingTop: "96px", paddingBottom: "128px", backgroundColor: "#ffffff", position: "relative", overflow: "hidden" }}>
+    <section id="why-us" ref={ref} style={{ paddingTop: "64px", paddingBottom: "80px", backgroundColor: "#ffffff", position: "relative", overflow: "hidden" }} className="why-us-section">
+      <style>{`
+        @media (min-width: 768px) {
+          .why-us-section { padding-top: 96px !important; padding-bottom: 128px !important; }
+        }
+      `}</style>
       {/* Background decorations */}
       <div
         style={{
@@ -108,7 +113,12 @@ export default function WhyChooseUs() {
         }}
       />
 
-      <div style={{ maxWidth: "1280px", marginLeft: "auto", marginRight: "auto", paddingLeft: "24px", paddingRight: "24px", position: "relative", zIndex: 10 }}>
+      <div style={{ maxWidth: "1280px", marginLeft: "auto", marginRight: "auto", paddingLeft: "16px", paddingRight: "16px", position: "relative", zIndex: 10 }} className="why-us-container">
+        <style>{`
+          @media (min-width: 640px) {
+            .why-us-container { padding-left: 24px !important; padding-right: 24px !important; }
+          }
+        `}</style>
         {/* Header */}
         <div
           style={{
